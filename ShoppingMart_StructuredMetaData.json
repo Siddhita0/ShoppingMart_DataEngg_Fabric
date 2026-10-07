@@ -1,19 +1,19 @@
 [
     {
         "source_url" : "refs/heads/main/Orders_Data.csv",
-        "target_folder" : "ShoppingMart_BronzeOrders",
-        "target_file" : "ShoppingMart_orders.csv"
+        "sink_folder" : "ShoppingMart_BronzeOrders",
+        "sink_file" : "ShoppingMart_orders.csv"
     },
     {
          "source_url" : "refs/heads/main/customers.csv",
-        "target_folder" : "ShoppingMart_BronzeCustomers",
-        "target_file" : "ShoppingMart_customers.csv"
+        "sink_folder" : "ShoppingMart_BronzeCustomers",
+        "sink_file" : "ShoppingMart_customers.csv"
 
     },
     {
         "source_url" : "refs/heads/main/products.csv",
-        "target_folder" : "ShoppingMart_BronzeProducts",
-        "target_file" : "ShoppingMart_products.csv"
+        "sink_folder" : "ShoppingMart_BronzeProducts",
+        "sink_file" : "ShoppingMart_products.csv"
 
     }
 ]
