@@ -1,0 +1,19 @@
+[
+    {
+        "source_url" : "refs/heads/main/ShoppingMart_StructuredData/Orders_Data.csv",
+        "target_folder" : "ShoppingMart_BronzeOrders",
+        "target_file" : "ShoppingMart_orders.csv"
+    },
+    {
+         "source_url" : "refs/heads/main/ShoppingMart_StructuredData/customers.csv",
+        "target_folder" : "ShoppingMart_BronzeCustomers",
+        "target_file" : "ShoppingMart_customers.csv"
+
+    },
+    {
+        "source_url" : "refs/heads/main/ShoppingMart_StructuredData/products.csv",
+        "target_folder" : "ShoppingMart_BronzeProducts",
+        "target_file" : "ShoppingMart_products.csv"
+
+    }
+]
