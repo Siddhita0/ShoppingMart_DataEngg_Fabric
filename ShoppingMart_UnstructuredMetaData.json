@@ -1,0 +1,19 @@
+[
+    {
+        "source_url" : "refs/heads/main/reviews.json",
+        "sink_folder" : "ShoppingMart_BronzeReviews",
+        "sink_file" : "ShoppingMart_review.json"
+    },
+    {
+         "source_url" : "refs/heads/main/social_media.json",
+        "sink_folder" : "ShoppingMart_BronzeSocial_Media",
+        "sink_file" : "ShoppingMart_social_media.json"
+
+    },
+    {
+        "source_url" : "refs/heads/main/web_logs.json",
+        "sink_folder" : "ShoppingMart_BronzeWeb_Logs",
+        "sink_file" : "ShoppingMart_web_logs.json"
+
+    }
+]
