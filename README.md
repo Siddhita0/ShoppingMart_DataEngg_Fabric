@@ -15,3 +15,7 @@ BI report
 
 Structured Data Pipeline
 <img width="2556" height="1291" alt="image" src="https://github.com/user-attachments/assets/11761315-ee23-4ebd-bb5e-0f00f2172c37" />
+
+Unstructured Data pipeline
+<img width="1470" height="832" alt="{37B5EE8B-9704-4AF7-8838-FEA0C3CFAFAF}" src="https://github.com/user-attachments/assets/e4db9ff0-110a-40e9-a9d3-28782849a123" />
+
