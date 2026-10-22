@@ -1,5 +1,64 @@
-# ShoppingMart_DataEngg_Fabric
+# ShoppingMart_DataEngg_Fabric: End-to-End Pipeline in Microsoft Fabric
 Created end-to-end data engineering project for shopping mart data using Medallion architecture. Created pipelines to ingest structured and unstructured data using API.
+
+## Overview
+An end-to-end analytics project built in Microsoft Fabric for a fictional retail chain. Raw order, product and review data is ingested into a lakehouse and refined through the **medallion architecture** (Bronze → Silver → Gold) using PySpark notebooks. A master pipeline runs the whole flow, and a Power BI report presents the results.
+
+The project answers questions such as: Which products and categories earn the most? Who are the top customers? How do sales change month to month? What do customers say in their reviews?
+
+## Architecture
+
+![Architecture](docs/images/architecture.png)
+
+Sources (structured + semi-structured) → Ingestion pipeline → Bronze → Silver → Gold → Power BI
+
+## Components
+
+| Component | Type | Purpose |
+|---|---|---|
+| ShoppingMart_BronzeLayer | Lakehouse | Landing zone for raw data, kept as received |
+| Notebook 1: Initial Process | PySpark notebook | Cleans data, standardises columns and aligns schemas |
+| ShoppingMart_dataBronzeLayer | Parameterised pipeline | Ingests multiple sources using parameters |
+| ShoppingMart_SilverLayer | Lakehouse | Validated, structured data ready for analysis |
+| Notebook 2: Further Transformations | PySpark notebook | Joins, aggregations and business-level modelling |
+| ShoppingMart_GoldLayer | Lakehouse | Summary tables and KPIs for reporting |
+| Run_MasterPipeline | Master pipeline | Runs ingestion and both notebooks in sequence |
+| ShoppingMart_Analysis_KPI's | Power BI report | Dashboard for sales, stock, sentiment and engagement |
+
+## What the project covers
+- **Parameterised ingestion:** one reusable pipeline loads different datasets, structured and semi-structured (CSV, JSON).
+- **Delta Lake storage:** all layers are Delta tables, which gives reliable, transactional storage.
+- **PySpark transformations:** null handling, type casting, joins, and aggregations by category, region and product, plus review sentiment scoring.
+- **Orchestration:** a master pipeline calls the child pipelines and notebooks in order: ingest, clean, aggregate.
+- **Reporting:** a Power BI report built on the Gold layer.
+
+## Dashboard
+The report includes:
+- Total revenue and product sales KPIs
+- Top 5 products and top 5 customers
+- Sales by category
+- Sentiment split (positive, neutral, negative)
+- Stock quantity overview
+- Monthly sales trend
+
+![Dashboard](docs/images/dashboard.png)
+
+## What I learned
+- Designing a medallion flow, and why each layer exists
+- Building parameterised pipelines and chaining them with a master pipeline
+- Reading structured and semi-structured files in PySpark
+- Debugging real issues, such as file path wildcards, JSON read options, and workspace permissions (see `docs/lessons-learned.md`)
+
+## Tech stack
+Microsoft Fabric (Lakehouse, Data Factory pipelines, Notebooks), PySpark, Delta Lake, Power BI
+
+## Next steps
+- Add watermark-based incremental loading
+- Add data quality checks and row-count validation between layers
+- Schedule the master pipeline with a trigger
+
+## Acknowledgements
+This project was inspired by [video title] by [creator] ([link]). I followed its overall design, then extended it by [your own changes, e.g. added X, fixed Y, documented Z].
 
 Taskflow
 <img width="2560" height="1351" alt="{0D2609A3-3F9D-4E3C-93B9-F57EF139FA9A}" src="https://github.com/user-attachments/assets/7c93c5a4-a2dc-40e6-a064-bdc95c68e65f" />
