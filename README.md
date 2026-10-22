@@ -54,7 +54,7 @@ Microsoft Fabric (Lakehouse, Data Factory pipelines, Notebooks), PySpark, Delta 
 - Schedule the master pipeline with a trigger
 
 ## Acknowledgements
-This project was inspired by [NextGen Data](https://www.youtube.com/watch?v=qG65DUcSjws&list=PLbIPP1PzRh4aw4ygCH_9C7Hz6dP-BULim&index=7)  by Reena 
+This project was inspired by [NextGen Data](https://www.youtube.com/watch?v=qG65DUcSjws&list=PLbIPP1PzRh4aw4ygCH_9C7Hz6dP-BULim&index=7)  
 
 Taskflow
 <img width="2560" height="1351" alt="{0D2609A3-3F9D-4E3C-93B9-F57EF139FA9A}" src="https://github.com/user-attachments/assets/7c93c5a4-a2dc-40e6-a064-bdc95c68e65f" />
