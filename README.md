@@ -13,3 +13,5 @@ BI report
 <img width="1685" height="1121" alt="{902D264B-9088-4820-9D9E-04A4370ACFF3}" src="https://github.com/user-attachments/assets/0019d5a2-4f15-4ec9-bc5e-f470ff0bad87" />
 <img width="2553" height="1352" alt="{F976C75E-05D7-4173-B1FF-2484CA4848C2}" src="https://github.com/user-attachments/assets/1cff3303-6b5c-4682-ad43-ba82378e0f43" />
 
+Structured Data Pipeline
+<img width="2556" height="1291" alt="image" src="https://github.com/user-attachments/assets/11761315-ee23-4ebd-bb5e-0f00f2172c37" />
