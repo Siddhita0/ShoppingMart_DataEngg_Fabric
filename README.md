@@ -19,3 +19,5 @@ Structured Data Pipeline
 Unstructured Data pipeline
 <img width="1470" height="832" alt="{37B5EE8B-9704-4AF7-8838-FEA0C3CFAFAF}" src="https://github.com/user-attachments/assets/e4db9ff0-110a-40e9-a9d3-28782849a123" />
 
+Semantic model
+<img width="2495" height="1214" alt="{5910F2BD-8D4E-4C93-8BED-2D48B1DDD727}" src="https://github.com/user-attachments/assets/ab92132f-63ac-4098-8415-599c1ad12bf6" />
